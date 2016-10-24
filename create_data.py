@@ -73,7 +73,8 @@ def get_player_stats(id):
     return player_summary
 
 def write_to_csv(file):
-    f = codecs.open(file, "w", encoding="utf-8")
+    #f = codecs.open(file, "w", encoding="utf-8")
+    f = open(file, "w")
     f.write(','.join(header) + '\n')
 
     player_data = get_player_list()
@@ -82,7 +83,6 @@ def write_to_csv(file):
         match_stats = get_player_stats(id)
         for match in match_stats:
             row = [str(x) for x in player + match]
-            print(row)
             f.write(','.join(row) + '\n')
     f.close()
 
