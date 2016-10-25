@@ -26,7 +26,7 @@ teams = {
     17: 'Spurs',
     18: 'Watford',
     19: 'West Brom',
-    20: 'West Ham',
+    20: 'West Ham'
 }
 positions = {
     1: 'Goalkeeper',
